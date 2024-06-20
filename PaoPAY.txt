@@ -1,0 +1,982 @@
+﻿<PãoPay>
+Documento de Visão
+
+
+Versão <1.0>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Autores
+Lucas Guilherme Ávila Barreto - 1232021323
+Matheus Lopes Ferreira Leite - 1232022908
+Pablo Celso Pereira -  1232020349
+Pedro Henrique Rodrigues Pires - 123221182
+Pedro Veloso da Motta Costa - 1232021563
+Samuel Andrade Resende  - 124111451
+
+
+
+
+
+
+
+
+Histórico da Revisão
+Data
+	Versão
+	Descrição
+	Autor
+	<04/04/2024>
+	<1.0>
+	<Primeiras Ideias>
+	Lucas Barreto
+Matheus Leite
+Pedro Pires
+Pedro Costa
+Samuel Resende
+pablo celso
+
+
+	<16/04/2024>
+	<1.1>
+	<Aprofundando no Assunto>
+	Samuel Resende
+Pedro Pires
+Matheus Leite
+Lucas Barreto
+pablo celso
+	<23/04/2024>
+	<1.2>
+	<Finalizando ⅓ projeto>
+	Lucas Barreto
+Matheus Leite
+Samuel Resende
+Pedro Pires
+Pedro Costa
+pablo celso
+	<24/04/2024>
+	<1.3>
+	<Caso de Uso>
+	Lucas Barreto
+Matheus Leite
+Pedro Pires
+Samuel resende
+	<01/05/2024>
+	<1.4>
+	<Diagrama de classe>
+	Matheus Leite
+Pedro Pires
+Pablo Celso
+Lucas Barreto
+Samuel Resende
+	<22/05/2024>
+	<1.5>
+	<Diagrama de Atividade/Sequência/Modelo Conceitual
+	Samuel Resende
+Matheus Leite
+Pedro Pires
+Pablo Celso
+Lucas Barreto
+Pedro Costa
+	<06/06/2024>
+	<1.6>
+	< MER/DER >
+	Samuel Resende
+Matheus Leite
+Pedro Pires
+Pablo Celso
+Lucas Barreto
+Pedro Costa
+	<17/06/2024>
+	<1.7>
+	<DDL/DML>
+	Samuel Resende
+Matheus Leite
+Pedro Pires
+Pablo Celso
+Lucas Barreto
+Pedro Costa
+	<20/06/2024>
+	<1.8>
+	FINAL PROJECT
+	Samuel Resende
+Matheus Leite
+Pedro Pires
+Pablo Celso
+Lucas Barreto
+Pedro Costa
+	
+
+
+
+
+
+
+
+
+
+________________
+Índice Analítico
+
+
+________________
+Visão
+1. Introdução
+
+
+O PãoPay é um sistema inovador desenvolvido para facilitar o gerenciamento de pendências financeiras em padarias, especialmente no contexto do sistema de pagamento a prazo. Com essa plataforma, os proprietários de padarias podem acompanhar e gerenciar de forma eficiente as contas em aberto de seus clientes, garantindo maior controle sobre as finanças do estabelecimento.
+Este programa oferece uma série de recursos essenciais para simplificar o processo, incluindo a gestão centralizada de contas, comunicação automatizada com clientes inadimplentes, relatórios financeiros detalhados e opções variadas de pagamento. Com o PãoPay, os donos de padarias podem melhorar a eficiência operacional, reduzir a inadimplência, proporcionar uma experiência mais conveniente aos clientes e obter insights valiosos para impulsionar o crescimento do negócio.
+Em suma, o PãoPay é uma ferramenta indispensável para padarias que desejam otimizar seu sistema de crédito e oferecer um serviço financeiro mais eficiente e conveniente para seus clientes.
+.
+
+
+   1. Definições, Acrônimos e Abreviações
+Sigla
+	Definição
+	ABNT
+	Associação Brasileira de Normas Técnicas
+	GDPR
+	Regulamento Geral sobre a Proteção de Dados
+	
+
+   2. Referências
+Tipo de Material
+	Referência bibliográfica
+	ABNT
+	Associação Brasileira de Normas Técnicas
+	GDPR
+	Regulamento Geral sobre a Proteçao de  Dados 
+	
+
+   3. Visão Geral
+ PROBLEMA:  A padaria enfrenta um grande problema com pendências dos clientes  por ser utilizado um método ineficaz,as cadernetas, elas acabam sendo esquecidas e acabam gerando prejuízo,e para melhorar o controle de estoque e não faltar material o sistema será desenvolvido.  
+
+
+OBJETIVO: Implantar um sistema que notifique as pendências dos clientes não permitindo que eles realizem novas compras em casos de débitos em aberto, aprimorando o monitoramento da quantidade de produtos presentes no estoque e atualizando a situação financeira da empresa.
+
+
+ ESCOPO: Recebimento online/offline, integração com estoque, notas fiscais e etiquetas
+
+
+PÚBLICO: Atendentes da empresa, Gerentes, proprietários e clientes.
+
+
+PRÓXIMOS PASSOS: Plano detalhado, equipe de desenvolvimento e início do desenvolvimento.
+________________
+2. Descrição Geral do Produto
+   1. Missão do Produto
+A missão deste produto é simplificar as operações financeiras da padaria, oferecendo uma solução intuitiva e precisa que permita aos proprietários gerenciar suas finanças de forma mais eficaz, otimizando assim o fluxo de caixa, melhorando a eficiência operacional e facilitando o planejamento financeiro. 
+   2. Escopo
+< Comentário: descrever o que o projeto deverá desenvolver e gerar como artefato para o cliente utilizar>
+
+
+Nº
+	Módulo
+	Descrição
+	1. 	Consultar as conta do cliente
+	Visualizar se as contas estão com o pagamento em dia ou em atraso.
+	2. 	Cadastro de todas NF
+	Manter um controle preciso e organizado das transações comerciais da empresa, facilitando a gestão financeira, o cumprimento das obrigações tributárias e a geração de relatórios para análise e tomada de decisão.
+	3. 	Consultar Produtos do estoque
+	Efetua o registro dos produtos adquiridos na compra dos clientes.
+	4. 	Registrar Produtos no estoque
+	Permitir o proprietário do estabelecimento realizar o cadastro dos produtos do seu comércio.
+	5. 	Cadastro de clientes que desejam criar conta
+	 Aos clientes que desejam  realizar o pagamento a prazo, deverão realizar o cadastro.
+	
+
+Exemplo1:
+  
+
+
+
+
+
+   3. Premissas 
+< Comentário: Descrever as premissas/restrições que estarão sendo adotadas durante a descrição dos requisitos:>
+
+
+* Será utilizada a metodologia de desenvolvimento ágil para este projeto
+* O proprietário fornecerá a sua logotipo
+* Prazo de desenvolvimento em 5 meses
+* Deve ter conexão com internet para acessar as informações remotamente
+* Compatibilidade com dispositivos: O sistema deve ser acessível  para o dispositivo computador desktop, para garantir a conveniência e acessibilidade para os usuários.
+* O cliente irá fornecer toda a documentação do sistema atual;
+* As integrações com sistemas externos se darão por meio de webservices;
+*    1. Itens Fora do Escopo
+< Comentário: listar tudo o que o usuário descreveu como não pertencente ao  projeto>
+* Desenvolvimento de hardware: Se o projeto é focado apenas no desenvolvimento de software, o hardware necessário para executar o software pode ser considerado fora do escopo.
+* * Treinamento de usuários: Embora seja crucial para a adoção bem-sucedida do software, o treinamento de usuários pode ser considerado fora do escopo se não estiver explicitamente incluído no projeto.
+* * Migração de dados legados: Se o projeto não inclui a migração de dados de sistemas legados para o novo software, essa atividade estará fora do escopo.
+* * Suporte pós-implementação a longo prazo: Embora o suporte pós-implementação possa ser necessário, especialmente durante a transição inicial, o suporte contínuo a longo prazo pode ser considerado fora do escopo do projeto.
+
+
+*    1. Descrição do Problema
+Problema
+	Afeta
+	Cujo impacto é
+	Uma boa solução seria
+	Acúmulo de Pendências financeiras
+	Lucro da empresa
+	Prejuízo financeiro
+	Uma plataforma de controle financeiro
+	
+
+
+
+
+
+
+
+
+
+3. 4. Descrições dos Envolvidos e Usuários
+   1. Resumo dos Envolvidos (Stakeholders)
+Nome
+	Descrição
+	Responsabilidades
+	Atendentes
+	Cadastro de clientes;
+Cadastro de produtos;
+Consultar se o cliente tem pendências.
+
+
+
+
+	Quando o cliente for pagar a prazo, os atendentes deverão realizar o cadastro do cliente;
+Proibir o cliente de pagar a prazo, quando o mesmo já estiver com conta em aberto;
+Quando um produto não estiver cadastrado, os atendentes deverão realizar o cadastro do produto.
+	Gerente
+	Cadastro de produtos; controle de estoque; visualizar extrato financeiro.
+Cadastro de Atendentes 
+Dar baixa nas pendências pagas
+
+
+	Sempre estar atento para não faltar produtos no estoque;
+O gerente deverá comunicar-se com os clientes que possuem débito em aberto para fazer a devida cobrança.
+Fazer o cadastro das atendentes.
+	Proprietário
+	Visualizar extrato financeiro.
+	Apuração das finanças da empresa.
+	
+
+   2. Resumo dos Atores N
+Ator
+	Definição
+
+
+	Permissão de acesso 
+
+
+	Freqüência de uso
+	Nível de instrução
+	Proficiência na aplicação
+	Proficiência em Informática
+	Atendentes
+	Funcionário operador comercial de caixa. 
+	Operação de Venda, Emissão de Nota Fiscal, Cadastro de Clientes e Produtos
+	Diário em horário comercial
+	l.°Grau 
+	Operacional 
+	Aplicação 
+	Gerente 
+	Funcionário responsável pela abertura e fechamento do caixa, além do cadastro de usuários. 
+	Geral
+	Diário 
+	2.°Grau 
+	Completa 
+	Aplicação Windows 
+	Proprietário
+	Apuração das finanças
+	Geral
+	Semanal
+	2.ºGrau
+	Completa
+	Aplicação Windows
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   3. Ambiente do Usuário
+* Número de pessoas envolvidas na execução da tarefa:  Normalmente duas pessoas estão envolvidas na execução das tarefas, como os atendentes ou gerente da padaria; 
+* Duração de um ciclo de tarefas e tempo gasto em cada atividade: O ciclo de tarefas pode variar dependendo das operações diárias da padaria. As atividades financeiras podem incluir registro de vendas, gerenciamento de estoque, processamento de pagamentos, entre outras. O tempo gasto em cada atividade pode variar, mas geralmente inclui algumas horas por dia dedicadas à atualização e manutenção dos registros financeiros.
+* Restrições ambientais exclusivas: Considerando que uma padaria pode ter um ambiente movimentado e dinâmico, é importante que o sistema financeiro seja acessível em diferentes dispositivos do estabelecimento tanto nos computadores do gerente e proprietário, como no computador do caixa.
+* Não há nenhuma plataforma de sistema sendo utilizada atualmente.
+* Nenhum aplicativo está  em uso. 
+
+
+   4. Principais Necessidades dos Usuários ou dos Envolvidos
+* Quais são as causas do problema? Perda das cadernetas manuscritas com os dados e valores dos clientes devedores.
+* Como ele está sendo resolvido agora? Fazendo o controle com o sistema de gestão financeira.
+* Os atendentes e o gerente desejam uma  forma mais prática de registrar os dados dos clientes devedores.
+Necessidade
+	Prioridade
+	Preocupações
+	Solução Atual
+	Soluções Propostas
+	Atenção quanto a quantidade de produtos em estoque
+	Média
+	Ausência de Produtos
+	Controle Manual de Estoque
+	Controle Digital de Estoque
+	Receber contas antigas/atrasadas
+	Alta
+	Prejuízo Financeiro
+	Cadernetas Manuscritas
+	Plataforma de controle de Pendências financeiras
+	
+
+________________
+5. Visão Geral do Produto
+   1. Requisitos Funcionais
+< Comentário: Requisito Funcional é todo aquele que define o funcionamento perceptível do sistema pelos usuários. Telas, informações, relatórios, fluxo de negócio são requisitos funcionais.>
+
+
+Exemplos:
+ID
+	Descrição
+	RF 01
+	O atendente deverá solicitar ao cliente  seu CPF, para verificar se ela tem alguma pendência financeira/ contas abertas.
+	RF 02
+	O Sistema deverá ter uma tela de login para identificar o tipo de conta logado.
+	RF 03
+	Os atores que esqueceram a senha poderão solicitá‐la ao sistema, bastando informar seu  login. Neste caso o sistema irá enviar um e‐mail com o link de confirmação de esqueci minha senha. Caso o usuário clique no link, o sistema enviará outra senha aleatória, gerada pelo mesmo. No primeiro login do usuário o sistema deverá solicitá‐lo que cadastre uma nova senha.
+	RF 04
+	Deverá ter página com todos produtos cadastrados e permitindo novos cadastros.
+	RF 05
+	Deverá ter uma página para solicitar o extrato financeiro tanto semanal como mensal.
+	RF 06
+	O sistema deve ser desenvolvido para a plataforma desktop.
+	RF 07
+	O sistema deverá enviar um link de pagamento aos clientes que possuem pendências.
+	RF 08
+	O sistema deverá possuir uma página para cadastro de clientes.
+	
+
+   2. Requisitos Não Funcionais
+<Comentário: Requisito Não Funcional é aquele que define os parâmetros de funcionamento do sistema, que trarão ao usuário uma melhor experiência no uso do sistema, porém não são diretamente acionados por ele. Nesta categoria estão os requisitos de arquitetura, desempenho, usabilidade, tempo de resposta, padrão de nomenclatura, entre outros. Em geral, os usuários finais do sistema tem uma boa noção dos requisitos não funcionais desejados, porém, pela própria subjetividade deles, o usuário não os explicita diretamente. Ou, nos melhores casos, o usuário fala coisas como: “que o sistema seja rápido”, “fácil de usar”, “atalhos”, “esteja sempre disponível”, “não dependa de ninguém para usar”. 
+1. Segurança: Dados restritos apenas para pessoas autorizadas.
+2. Performance : O sistema deverá rodar em computadores em nuvem.
+3. Usabilidade: Interface intuitiva. 
+4. Confiabilidade: O sistema terá a funcionalidade de backup automático.
+5. Padrões:  O sistema deverá conter o padrão da ABNT
+6. Hardware e Software: O sistema será instalado em computação e nuvem
+
+
+
+
+
+
+
+
+ID
+	Descrição
+	Categoria
+	RNF 1
+	Dados restritos apenas para pessoas autorizadas.
+	Segurança
+	RNF 2
+	 O sistema deverá rodar em computadores em nuvem
+
+
+	Performance
+	RNF 3
+	 Interface intuitiva. 
+
+
+	Usabilidade
+	RNF 4
+	O sistema terá a funcionalidade de backup automático.
+
+
+	Confiabilidade
+	RNF 5
+	O sistema deverá conter o padrão da ABNT
+
+
+	Padrões
+	RNF 6
+	O sistema será instalado em computação e nuvem
+	Hardware e Software
+	
+
+   3. Regras de Negócio
+
+
+
+
+ID
+	Nome
+	Descrição
+	RN 1
+	Restrição de acesso
+	 Somentes usuários permitidos deverão ter acesso ao painel financeiro
+	RN 2
+	Verificação das Pendências
+	O Sistema não permitirá a realização da compra a prazo caso o cliente esteja com uma pendência fora do prazo de pagamento
+	RN 3
+	Validação do cadastro de produtos
+	O sistema não deve permitir o cadastro de um mesmo produto.
+
+
+	RN 4
+	ALerta de baixo estoque
+	O sistema não deve permitir que o estoque de um produto chegue a um nível crítico, alertando o gerente
+
+
+	
+
+   4. Restrições de Hardware
+<Comentários: descreva nas próximas seções alguma restrição quanto ao uso de um determinado software, alguma exigência específica quanto ao Hardware ou ao ambiente tecnológico ou físico (se aplicável)>
+
+
+Nº
+	Descrição
+	1. 	Requisitos mínimos de Sistema
+Compatibilidade de Sistema Operacional
+Conectividade
+	   5. Restrições de Software
+
+
+
+
+
+
+Nº
+	Descrição
+	1. 	Licenciamento
+	2. 	 Restrições de Uso de Dados
+
+	   6. Restrições de Ambiente
+
+
+
+
+Nº
+	Descrição
+	1
+	Rede: Para softwares que dependem de conectividade de rede, pode ser necessário um ambiente de rede confiável e estável, com largura de banda adequada e medidas de segurança cibernética implementadas.
+
+
+	2
+	Risco de falha de conectividade: Dependência de infraestrutura de conectividade externa, como fornecedores de Internet ou serviços de nuvem, sujeita a interrupções ou falhas, resultando em inacessibilidade do software.
+
+
+	
+
+   7. Lista de Riscos 
+
+
+01
+	
+
+Risco de violação de privacidade de dados:
+	
+
+* Não cumprimento das normas de privacidade de dados, como GDPR,  entre outras.
+
+
+	02
+
+
+	Riscos Operacionais
+	
+
+* Falta de backup adequado para garantir a continuidade das operações em caso de falha do sistema.
+
+
+	0  3
+	Riscos de Desempenho e Disponibilidade
+	
+
+* Sobrecarga do sistema devido a um aumento repentino no volume de dados ou usuários.
+
+
+	   8. Prototipação do projeto
+        https://www.canva.com/design/DAGDQuHCoj8/22Zhh63-hai-8sUfY4l6-g/edit?utm_content=DAGDQuHCoj8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+
+
+  
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+   9. Diagrama de Contexto (Caso de Uso)
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   10. Lista de Casos de Uso
+Código
+	Caso de Uso
+	Descrição        
+	Prioridade
+	01
+	Login
+	Permitir que o usuário se identifique 
+	média
+	02
+	Cadastrar produto
+	Cadastrar produtos fora do sistema 
+	média
+	03
+	Registrar vendas
+	Registrar as vendas da padaria
+	alta
+	04
+	Checar estoque 
+	Confirmar se a estoque dos produtos
+
+
+	média
+	05
+	Resumo financeiro 
+	Ver todos valores que Entraram no dia/Mês
+	alta
+	06
+	Enviar link pagamento 
+	Atualizar clientes sobre seus débitos
+	alta
+	
+
+   11. Especificação de Casos de Uso
+
+
+1. Nome do Caso de Uso
+Breve Descrição
+
+
+* Login:
+Descrição: Este caso de uso permite que os usuários autentiquem-se no sistema utilizando suas credenciais de acesso.
+* Cadastrar Produto:
+Descrição: Este caso de uso permite que os funcionários da padaria cadastrem novos produtos no sistema.
+* Registrar Vendas:
+Descrição: Este caso de uso permite que os funcionários registrem as vendas de produtos feitas pela padaria.
+* Checar Estoque:
+Descrição: Este caso de uso permite que os funcionários verifiquem o status atual do estoque de produtos da padaria.
+* Resumo Financeiro:
+Descrição: Este caso de uso permite que o gerente ou proprietário da padaria visualize um resumo das finanças da padaria, incluindo vendas, despesas, lucros e pendências de clientes.
+* Enviar Link de Pagamento:
+Descrição: Este caso de uso permite que a padaria envie um link de pagamento para que o cliente tenha a opção de pagar de sua casa, através do pix.
+
+
+2. Precondições 
+
+
+* Login: O sistema está operacional e o usuário possui credenciais válidas.
+* Cadastrar Produto: O sistema está operacional e o usuário está logado para cadastrar produtos.
+* Registrar Vendas: O sistema está operacional, o usuário está logado para registrar vendas, o produto deve está cadastrado no sistema e o cliente não pode estar bloqueado para realizar a compra a prazo.
+* Checar Estoque: O sistema está operacional e o usuário está logado para acessar o estoque.
+* Resumo Financeiro: O sistema está operacional e o funcionário possui permissões para acessar o resumo financeiro.
+* Enviar Link de Pagamento: O sistema está operacional e o cliente possui um pedido pendente.
+3. Fluxo de Eventos
+Fluxo Principal         
+* Login:
+O usuário acessa a página de login do sistema.
+O usuário insere seu nome de usuário,email e senha.
+O sistema valida as credenciais do usuário.
+Se as credenciais forem válidas, o sistema autentica o usuário e redireciona para a página principal.
+* Cadastrar Produto:
+O funcionário acessa a interface do sistema para cadastrar novos produtos.
+O funcionário preenche os detalhes do novo produto, como nome, id, preço e quantidade inicial.
+O sistema valida as informações do produto.
+Se os dados estiverem corretos, o sistema adiciona o novo produto ao estoque da padaria.
+* Registrar Vendas:
+O funcionário acessa a interface do sistema para registrar uma nova compra.
+O funcionário seleciona os produtos a vender e especifica a quantidade adquirida de cada item.
+O sistema calcula o total da venda e atualiza o estoque dos produtos.
+* Checar Estoque:
+O funcionário acessa a interface do sistema para verificar o estoque.
+O sistema exibe uma lista de produtos disponíveis na padaria, juntamente com suas quantidades atuais.
+O funcionário pode aplicar filtros ou realizar pesquisas para encontrar produtos específicos, se necessário.
+* Resumo Financeiro:
+O usuário acessa a função de resumo financeiro no sistema.
+O sistema gera um resumo que inclui informações como total de vendas, despesas totais, lucro líquido, pendências de clientes e outras métricas financeiras relevantes.
+O usuário pode visualizar detalhes adicionais, como gráficos ou relatórios detalhados, se disponíveis.
+* Enviar Link de Pagamento:
+O gerente/proprietário acessa a interface do sistema para gerenciar pedidos pendentes.
+O gerente/proprietário seleciona o pedido específico que deseja enviar o link de pagamento.
+O sistema gera um link de pagamento seguro para o pedido selecionado.
+O gerente/proprietário deverá enviar o link de pagamento para o cliente através do Whatsapp ou mensagem de texto.
+O cliente recebe o link de pagamento e realiza o pagamento online, via pix.
+
+
+Fluxos Alternativos
+* Login:
+Se as credenciais fornecidas pelo usuário forem inválidas, o sistema exibe uma mensagem de erro e permite que o usuário tente novamente.
+Se o usuário esquecer a senha, ele poderá alterá-la em “esqueci minha senha”.
+* Cadastrar Produto:
+Se algum campo obrigatório não for preenchido ou se ocorrer um erro durante a validação dos dados, o sistema exibe uma mensagem de erro e solicita ao funcionário que corrija as informações fornecidas.
+* Registrar Vendas:
+Se o produto desejado pelo cliente não estiver cadastrado, o funcionário deverá imediatamente fazer o cadastro do mesmo ou chamar o gerente.
+* Checar Estoque:
+Se um produto estiver com quantidade baixa no estoque, o sistema pode destacá-lo ou enviar um alerta para o gerente responsável pela compra e reposição de estoque.
+* Resumo Financeiro:
+Se necessário, o gerente/proprietário pode aplicar filtros ou selecionar períodos de tempo específicos para analisar dados financeiros históricos.
+* Enviar Link de Pagamento:
+Se o cliente não receber ou não conseguir acessar o link de pagamento, o funcionário pode reenviar o link ou fornecer assistência adicional conforme necessário.
+
+
+
+
+
+
+
+
+Fluxos de Exceção
+
+
+*  Login:
+Exceção 1: Se o sistema estiver temporariamente indisponível devido a uma falha técnica, o usuário receberá uma mensagem de erro e será orientado a tentar novamente mais tarde.
+Exceção 2: Se o usuário tentar fazer login com credenciais inválidas várias vezes consecutivas, o sistema pode bloquear temporariamente o acesso à conta por motivos de segurança.
+* Cadastrar Produto:
+Exceção 1: Se o produto que o funcionário está tentando cadastrar já existir no sistema (duplicata), o sistema exibirá uma mensagem de erro indicando que o produto já está cadastrado e solicitará que o funcionário verifique novamente os detalhes do produto.
+Exceção 2: Se ocorrer uma falha na comunicação com o banco de dados durante o cadastro do produto, o sistema exibirá uma mensagem de erro indicando que não foi possível salvar as informações do produto e instruirá o funcionário a tentar novamente mais tarde.
+* Registrar Vendas:
+Exceção 1: Se o sistema detectar uma quantidade de estoque insuficiente para um ou mais produtos que estão sendo registrados na venda, ele exibirá uma mensagem de aviso indicando que a venda daquele produto não pode ser concluída devido à falta de estoque e solicitará ao funcionário que ajuste a quantidade de produtos ou adie a venda até que o estoque seja reabastecido.
+Exceção 2: Se houver uma falha no sistema durante o registro da venda, os dados podem ficar incompletos ou perdidos. Nesse caso, o sistema exibirá uma mensagem de erro e solicitará ao funcionário que tente registrar a venda novamente.
+* Checar Estoque:
+Exceção 1: Se o sistema estiver enfrentando lentidão ou indisponibilidade temporária, o funcionário poderá não conseguir acessar as informações do estoque. O sistema exibirá uma mensagem informando sobre o problema e sugerindo que o funcionário tente novamente mais tarde.
+Exceção 2: Se um produto estiver marcado como disponível no sistema, mas estiver ausente fisicamente no estoque devido a um erro de contagem ou roubo, o sistema poderá exibir uma discrepância no status do estoque. Nesse caso, o funcionário será notificado e orientado a investigar e corrigir o problema.
+* Resumo Financeiro:
+Exceção 1: Se os dados financeiros estiverem indisponíveis devido a uma falha no sistema ou falta de atualização dos registros, o sistema exibirá uma mensagem de erro indicando que não foi possível gerar o resumo financeiro no momento e instruirá o usuário a tentar novamente mais tarde.
+* Enviar Link de Pagamento:
+Exceção 1: Se ocorrer um erro ao gerar o link de pagamento, como uma falha no sistema de pagamento ou na geração do link, o funcionário será notificado e orientado a tentar novamente ou a entrar em contato com o suporte técnico para resolver o problema.
+Exceção 2: Se o cliente fornecer informações de contato inválidas ou se o método de comunicação escolhido não estiver disponível, o sistema exibirá uma mensagem de erro indicando que não foi possível enviar o link de pagamento e solicitará ao gerente que entre em contato com o cliente para obter informações corretas ou oferecer uma alternativa de pagamento.
+
+
+
+
+
+
+
+
+   12. Diagrama de Classe
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   13. Diagrama de Sequência
+  
+
+
+
+   14. Modelo de Entidades e Relacionamento. (MER)
+  
+
+https://lucid.app/lucidchart/b5be943c-62f1-444f-9794-7dbbe138d357/edit?viewport_loc=-902%2C-324%2C2778%2C1209%2C0_0&invitationId=inv_309433a5-5874-411c-b017-8c8543ebca96 
+
+
+   15. Diagrama de Atividades  
+
+
+
+
+
+
+5.16 Diagrama Entidade-Relacionamento (DER)
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.17 DDL
+
+
+CREATE DATABASE PaoPay
+USE PaoPay
+
+
+CREATE TABLE Usuario (
+    IDusuario INT PRIMARY KEY,0
+    Nome VARCHAR(45),
+    CPF VARCHAR(11),
+    Email VARCHAR(45),
+    Login VARCHAR(45),
+    Senha VARCHAR(20)
+);
+
+
+
+
+CREATE TABLE Estoque (
+    idProduto INT PRIMARY KEY,
+    Quantidade INT
+ 
+);
+
+
+
+
+CREATE TABLE Produto (
+    IdProduto INT PRIMARY KEY,
+    Nome VARCHAR(100),
+    Preco DECIMAL(10,2),
+    Descricao TEXT,
+    Quantidade INT,
+    Estoque_idProduto INT,
+    Venda_IdVenda INT,
+    FOREIGN KEY (Estoque_idProduto) REFERENCES Estoque(idProduto)
+    FOREIGN KEY (venda IdVenda) REFERENCES Venda(IdVenda)
+);
+
+
+
+
+CREATE TABLE ResumoFinanceiro (
+    IdResumo INT PRIMARY KEY,
+    TotalVendas DECIMAL(10,2),
+    Despesas DECIMAL(10,2),
+    LucroLiquido DECIMAL(10,2),
+    PendenciasClientes INT,
+    DataResumo DATE
+);
+
+
+
+
+CREATE TABLE Venda (
+    IdVenda INT PRIMARY KEY,
+    DataVenda DATE,
+    ValorTotal DECIMAL(10,2),
+    Usuario_IDusuario INT,
+    ResumoFinanceiro_IdResumo INT,
+    PendenciaFinanceira_IdPendencia INT,
+    FOREIGN KEY (Usuario_IDusuario) REFERENCES Usuario(IDusuario),
+    FOREIGN KEY (ResumoFinanceiro_IdResumo) REFERENCES ResumoFinanceiro(IdResumo),
+FOREIGN KEY (PendenciaFinanceira IdPendencia) REFERENCES PendenciaFinanceira(IdPendencia)
+);
+
+
+
+
+CREATE TABLE DetalhesVenda (
+    IdDetalhe INT PRIMARY KEY,
+    Quantidade INT,
+    PrecoUnitario DECIMAL(10,2),
+    ValorTotalItem DECIMAL(10,2),
+    NomeProduto VARCHAR(45)
+    DetalhesVenda VARCHAR(45)
+    Venda_IdVenda INT,
+    Produto_IdProduto INT
+    FOREIGN KEY (Venda_IdVenda) REFERENCES Venda(IdVenda)
+    FOREIGN KEY (Produto_IdProduto) REFERENCES Produto(IdProduto)
+);
+
+
+
+
+CREATE TABLE PendenciaFinanceira (
+
+
+    IdPendencia INT PRIMARY KEY,
+    Valor DECIMAL(10,2),
+    DataPendencia DATE,
+    PedidoPagamento  INT,
+    LinkPagamento VARCHAR(255)
+   );
+
+
+
+
+5.18 DML
+
+
+USE PaoPay;
+
+
+
+
+INSERT INTO Usuario (IDusuario, Nome, CPF, Email, Login, Senha) VALUES
+(1, 'João Silva', '12345678901', 'joao.silva@.com', 'joaosilva', '123'),
+(2, 'Maria Oliveira', '23456789012', 'maria.oliveira@.com', 'mariaoliveira', '456'),
+(3, 'Carlos Souza', '34567890123', 'carlos.souza@.com', 'carlossouza', '789');
+
+
+
+
+INSERT INTO Estoque (idProduto, Quantidade) VALUES
+(1, 100),
+(2, 200),
+(3, 150);
+
+
+
+
+INSERT INTO Produto (IdProduto, Nome, Preco, Descricao, Quantidade, Estoque_idProduto, Venda_IdVenda) VALUES
+(1, 'Pão Francês', 0.50, 'Pão crocante e fresco', 100, 1, NULL),
+(2, 'Pão de Queijo', 1.00, 'Pão de queijo mineiro', 200, 2, NULL),
+(3, 'Baguete', 1.50, 'Baguete francesa', 150, 3, NULL);
+
+
+
+
+INSERT INTO ResumoFinanceiro (IdResumo, TotalVendas, Despesas, LucroLiquido, PendenciasClientes, DataResumo) VALUES
+(1, 500.00, 100.00, 400.00, 2, '2024-06-01'),
+(2, 1000.00, 200.00, 800.00, 1, '2024-06-02'),
+(3, 750.00, 150.00, 600.00, 3, '2024-06-03');
+
+
+
+
+INSERT INTO Venda (IdVenda, DataVenda, ValorTotal, Usuario_IDusuario, ResumoFinanceiro_IdResumo, PendenciaFinanceira_IdPendencia) VALUES
+(1, '2024-06-10', 50.00, 1, 1, NULL),
+(2, '2024-06-11', 100.00, 2, 2, NULL),
+(3, '2024-06-12', 75.00, 3, 3, NULL);
+
+
+
+
+INSERT INTO DetalhesVenda (IdDetalhe, Quantidade, PrecoUnitario, ValorTotalItem, NomeProduto, Venda_IdVenda, Produto_IdProduto) VALUES
+(1, 10, 0.50, 5.00, 'Pão Francês', 1, 1),
+(2, 20, 1.00, 20.00, 'Pão de Queijo', 2, 2),
+(3, 15, 1.50, 22.50, 'Baguete', 3, 3);
+
+
+
+
+INSERT INTO PendenciaFinanceira (IdPendencia, Valor, DataPendencia, PedidoPagamento, LinkPagamento) VALUES
+(1, 50.00, '2024-06-01', 1, 'http://pagamento1.com'),
+(2, 100.00, '2024-06-02', 2, 'http://pagamento2.com'),
+(3, 75.00, '2024-06-03', 3, 'http://pagamento3.com');
+
+
+
+
+
+
+
+
+
+
+
+
+Confidencial
+	©PãoPay, 2024
+	Página
